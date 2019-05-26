@@ -1,7 +1,9 @@
 package org.sambasoft.services;
 
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.sambasoft.entities.Role;
 import org.sambasoft.entities.User;
@@ -35,13 +37,17 @@ public class UserService {
         user.setRoles(roles);
         userRepository.save(user);
     }
+    public User findOne(String email) {
+        return userRepository.getOne(email);    }
 
-    //
-//    public User findOne(String email) {
-//
-////        return userRepository.findOne(email);
-//        return "hello World";
-//    }
+    public boolean isUserPresent(String email) {
+        // TODO Auto-generated method stub
+        Optional<User> optUser = userRepository.findById(email); // returns java8 optional
+        if (optUser.isPresent()) {
+            return true;
+        }
+        return false;
+    }
 
 }
 
