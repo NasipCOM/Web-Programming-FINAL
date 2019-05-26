@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{fragments/main_layout}" >
+<head>
+ <title>Index Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+     <div  layout:fragment="content" class="container mySpace">
+         <div>
+
+            There was an error  |<span th:text="${message}"></span>| <span th:text="${status}" class="text text-danger"></span>
+
+         </div>
+         <div>
+           Please contact SambaMedia if you have reached this far!!!!
+         </div>
+     </div>
+</body>
+</html>
