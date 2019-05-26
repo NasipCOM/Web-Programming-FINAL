@@ -1,5 +1,7 @@
 package org.sambasoft.controllers;
 
+import javax.validation.Valid;
+
 import org.sambasoft.entities.User;
 import org.sambasoft.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,8 +10,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-
-import javax.validation.Valid;
 
 @Controller
 public class RegisterController {
@@ -22,10 +22,10 @@ public class RegisterController {
 		model.addAttribute("user", new User());
 		return "views/registerForm";
 	}
-	
-	
+
+
 	@PostMapping("/register")
-    public String registerUser(@Valid User user, BindingResult bindingResult, Model model) {
+	public String registerUser(@Valid User user, BindingResult bindingResult, Model model) {
 		if(bindingResult.hasErrors()) {
 			return "views/registerForm";
 		}
