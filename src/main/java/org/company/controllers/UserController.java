@@ -1,6 +1,6 @@
-package org.sambasoft.controllers;
+package org.company.controllers;
 
-import org.sambasoft.services.UserService;
+import org.company.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

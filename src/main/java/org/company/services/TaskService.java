@@ -1,10 +1,10 @@
-package org.sambasoft.services;
+package org.company.services;
 
 import java.util.List;
 
-import org.sambasoft.entities.Task;
-import org.sambasoft.entities.User;
-import org.sambasoft.repositories.TaskRepository;
+import org.company.entities.Task;
+import org.company.entities.User;
+import org.company.repositories.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

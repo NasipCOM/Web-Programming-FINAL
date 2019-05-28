@@ -1,4 +1,4 @@
-package org.sambasoft.config;
+package org.company.config;
 
 import javax.sql.DataSource;
 

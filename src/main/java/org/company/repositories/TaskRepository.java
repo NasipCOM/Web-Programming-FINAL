@@ -1,9 +1,9 @@
-package org.sambasoft.repositories;
+package org.company.repositories;
 
 import java.util.List;
 
-import org.sambasoft.entities.Task;
-import org.sambasoft.entities.User;
+import org.company.entities.Task;
+import org.company.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TaskRepository  extends JpaRepository<Task, Long>{

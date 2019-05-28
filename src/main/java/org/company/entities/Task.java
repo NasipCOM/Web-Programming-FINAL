@@ -1,4 +1,4 @@
-package org.sambasoft.entities;
+package org.company.entities;
 
 
 import javax.persistence.Column;

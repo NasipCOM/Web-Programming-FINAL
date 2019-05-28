@@ -1,6 +1,6 @@
-package org.sambasoft.repositories;
+package org.company.repositories;
 
-import org.sambasoft.entities.Role;
+import org.company.entities.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface RoleRepository  extends JpaRepository<Role, String>{

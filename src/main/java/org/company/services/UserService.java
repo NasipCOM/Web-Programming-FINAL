@@ -1,12 +1,12 @@
-//package org.sambasoft.services;
+//package org.company.services;
 //
 //import java.util.ArrayList;
 //import java.util.List;
 //import java.util.Optional;
 //
-//import org.sambasoft.entities.Role;
-//import org.sambasoft.entities.User;
-//import org.sambasoft.repositories.UserRepository;
+//import org.company.entities.Role;
+//import org.company.entities.User;
+//import org.company.repositories.UserRepository;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 //import org.springframework.stereotype.Service;
@@ -68,15 +68,15 @@
 //
 //}
 
-package org.sambasoft.services;
+package org.company.services;
 
         import java.util.ArrayList;
         import java.util.List;
         import java.util.Optional;
 
-        import org.sambasoft.entities.Role;
-        import org.sambasoft.entities.User;
-        import org.sambasoft.repositories.UserRepository;
+        import org.company.entities.Role;
+        import org.company.entities.User;
+        import org.company.repositories.UserRepository;
         import org.springframework.beans.factory.annotation.Autowired;
         import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
         import org.springframework.stereotype.Service;
