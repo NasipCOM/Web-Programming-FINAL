@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>Trello 2</artifactId>
+	<artifactId>Kanban</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Trello 2</name>
+	<name>Kanban</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -81,6 +81,7 @@
 			<version>3.2.1</version>
 		</dependency>
 		<dependency>
+			<version>0.36</version>
 			<groupId>org.webjars</groupId>
 			<artifactId>webjars-locator</artifactId>
 		</dependency>
